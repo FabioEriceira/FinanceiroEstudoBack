@@ -16,6 +16,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
+
 @Entity
 @Table(name="tab_movimentacao")
 public class Movimentacao {
@@ -29,6 +30,9 @@ public class Movimentacao {
 	
 	private String descricao;
 	private Double valor;
+	
+	@Column(name = "id_conta")
+	private Integer idConta;
 	
 	@Enumerated(EnumType.STRING)
 	private MovimentacaoTipo tipo;
