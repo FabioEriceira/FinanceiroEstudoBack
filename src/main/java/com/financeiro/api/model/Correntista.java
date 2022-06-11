@@ -1,18 +1,29 @@
 package com.financeiro.api.model;
 
+import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.hibernate.tool.schema.internal.exec.GenerationTarget;
 
 @Entity
 @Table(name = "tab_correntista")
 public class Correntista {
 	@Id
-	@GeneratedValue()
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	
+	@Column(length = 20)
 	private String cpf;
+	
+	@Column(length = 60)
 	private String nome;
+	
+	@Embedded
 	private Conta conta;
 	
 	
