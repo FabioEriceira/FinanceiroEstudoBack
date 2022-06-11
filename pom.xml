@@ -12,7 +12,7 @@
 	<artifactId>financeiro-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>financeiro-api</name>
-	<description>API Rest do projeto financeiro </description>
+	<description>API Rest do projeto financeiro</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
