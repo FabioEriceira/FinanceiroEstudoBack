@@ -37,10 +37,8 @@ public class MovimentacaoService {
 			 correntista.getConta().setSaldo(correntista.getConta().getSaldo()+valor);
 			 correntistaRepository.save(correntista); 
 		 }
-				 
 		 
 		 repository.save(movimentacao);
 		 
 	}
-
 }
